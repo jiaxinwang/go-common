@@ -1,3 +1,6 @@
 .vscode
 .DS_Store
 vendor
+*.db
+mail/mail_test.go
+swc/*_test.go
