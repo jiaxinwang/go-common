@@ -22,7 +22,6 @@ func SafeCopy(src, dst string) (err error) {
 	for {
 		if FileExist(dest) {
 			num++
-
 			dest = fmt.Sprintf("%s/%s(%d)%s", path.Dir(dst), strings.TrimSuffix(filepath.Base(dst), path.Ext(dst)), num, path.Ext(dst))
 			logrus.Info("dup: ", dest)
 		} else {
