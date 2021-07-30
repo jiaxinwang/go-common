@@ -25,7 +25,6 @@ func SafeCopy(src, dst string) (err error) {
 			dest = fmt.Sprintf("%s/%s(%d)%s", path.Dir(dst), strings.TrimSuffix(filepath.Base(dst), path.Ext(dst)), num, path.Ext(dst))
 			logrus.Info(dest)
 		} else {
-			logrus.Info("here ", dest)
 			break
 		}
 	}
